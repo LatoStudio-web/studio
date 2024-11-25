@@ -1,123 +1,89 @@
-/* General Reset */
-body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    color: #fff;
-    background: #000;
-    overflow-x: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: #111;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5em;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.full-screen {
+  height: 100vh;
+  position: relative;
+  background: url('background1.jpg') center/cover no-repeat;
+  animation: backgroundAnimation 20s infinite;
+}
+
+@keyframes backgroundAnimation {
+  0%, 100% { background: url('background1.jpg') center/cover no-repeat; }
+  50% { background: url('background2.jpg') center/cover no-repeat; }
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-/* Header */
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 30px;
-    z-index: 100;
+.hero-text {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.logo h1 {
-    font-size: 1.5em;
-    margin: 0;
+section {
+  padding: 60px;
+  text-align: center;
 }
 
-.menu a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1em;
+.team, .gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.menu a:hover {
-    text-decoration: underline;
+.team .member, .gallery .item {
+  text-align: center;
 }
 
-/* Sections */
-.section {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 50px;
-}
-
-.about .team {
-    display: flex;
-    gap: 20px;
-}
-
-.team-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Portfolio */
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    width: 100%;
-    max-width: 1000px;
-}
-
-.portfolio-item img,
-.portfolio-item video {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Contact */
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    max-width: 400px;
-}
-
-.contact form input,
-.contact form textarea,
-.contact form button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.contact form button {
-    background: #444;
-    color: #fff;
-    cursor: pointer;
-}
-
-.contact form button:hover {
-    background: #666;
+form input, form textarea, form button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
 }
