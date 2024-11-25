@@ -1,10 +1,10 @@
 /* General */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
     color: #333;
+    line-height: 1.6;
 }
 
 .container {
@@ -15,20 +15,26 @@ body {
 
 /* Header */
 .header {
-    background: #f4f4f4;
     text-align: center;
-    padding: 20px;
+    padding: 50px 0;
+    background: #f4f4f4;
 }
 
 .header h1 {
-    margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #555;
 }
 
 /* Navbar */
 .navbar {
     background: #333;
     color: #fff;
+    text-align: center;
 }
 
 .navbar a {
@@ -44,51 +50,61 @@ body {
 
 /* About Section */
 .about {
-    padding: 20px 0;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Work Section */
+.work {
+    padding: 50px 0;
     text-align: center;
 }
 
-/* Portfolio Section */
-.portfolio {
-    padding: 20px 0;
-}
-
-.portfolio-grid {
+.work-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-.portfolio-item {
+.work-item {
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
     text-align: center;
 }
 
-.portfolio-item img {
+.work-item img {
     width: 100%;
     height: auto;
 }
 
-.portfolio-item h3 {
+.work-item h3 {
     margin: 10px 0;
 }
 
 /* Contact Section */
 .contact {
-    padding: 20px 0;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .contact form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
 }
 
 .contact input, .contact textarea, .contact button {
     padding: 10px;
     font-size: 1em;
+    width: 100%;
 }
 
 .contact button {
@@ -96,6 +112,7 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
+    padding: 15px;
 }
 
 .contact button:hover {
