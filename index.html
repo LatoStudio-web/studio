@@ -1,93 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creativo & Diseñador</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creativo Publicitario</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Background Section -->
-    <div id="background">
-        <div class="overlay"></div>
+  <header>
+    <div class="logo">Tu Logo</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Quiénes Somos</a></li>
+        <li><a href="#portfolio">Portafolio</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="full-screen">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Bienvenido a mi Portafolio</h1>
+      <p>Diseño gráfico y creatividad publicitaria</p>
     </div>
+  </section>
 
-    <!-- Header Section -->
-    <header class="header">
-        <div class="logo">
-            <h1>Mi Logo</h1>
+  <section id="about">
+    <h2>Quiénes Somos</h2>
+    <p>Texto sobre tu trayectoria y habilidades en diseño y publicidad.</p>
+    <div class="team">
+      <div class="member">
+        <img src="team1.jpg" alt="Miembro 1">
+        <h3>Nombre 1</h3>
+        <p>Descripción breve.</p>
+        <div class="social">
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
         </div>
-        <nav class="menu">
-            <a href="#about">Quiénes Somos</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contacto</a>
-        </nav>
-    </header>
+      </div>
+      <div class="member">
+        <img src="team2.jpg" alt="Miembro 2">
+        <h3>Nombre 2</h3>
+        <p>Descripción breve.</p>
+        <div class="social">
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Main Content -->
-    <main>
-        <!-- About Section -->
-        <section id="about" class="section about">
-            <h2>Quiénes Somos</h2>
-            <p>
-                Somos un equipo apasionado de creativos publicitarios y diseñadores gráficos, 
-                dedicados a transformar ideas en experiencias visuales únicas.
-            </p>
-            <div class="team">
-                <div class="team-member">
-                    <img src="person1.jpg" alt="Persona 1">
-                    <h3>Nombre 1</h3>
-                    <p>Rol o especialidad</p>
-                </div>
-                <div class="team-member">
-                    <img src="person2.jpg" alt="Persona 2">
-                    <h3>Nombre 2</h3>
-                    <p>Rol o especialidad</p>
-                </div>
-            </div>
-        </section>
+  <section id="portfolio">
+    <h2>Portafolio</h2>
+    <p>Muestra de proyectos realizados.</p>
+    <div class="gallery">
+      <div class="item"><img src="portfolio1.jpg" alt="Proyecto 1"></div>
+      <div class="item"><img src="portfolio2.jpg" alt="Proyecto 2"></div>
+    </div>
+  </section>
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="section portfolio">
-            <h2>Portfolio</h2>
-            <p>
-                Una selección de nuestros trabajos destacados, desde proyectos gráficos hasta campañas multimedia.
-            </p>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="project1.jpg" alt="Proyecto 1">
-                    <p>Descripción del proyecto</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="project2.jpg" alt="Proyecto 2">
-                    <p>Descripción del proyecto</p>
-                </div>
-                <div class="portfolio-item">
-                    <video src="video1.mp4" autoplay muted loop></video>
-                    <p>Descripción del video</p>
-                </div>
-            </div>
-        </section>
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>Déjanos un mensaje o sigue nuestras redes sociales.</p>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo Electrónico" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section contact">
-            <h2>Contacto</h2>
-            <p>
-                ¡Hablemos! Encuéntranos en redes sociales o envíanos un mensaje directamente.
-            </p>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Tu Nombre" required>
-                <input type="email" name="email" placeholder="Tu Email" required>
-                <textarea name="message" placeholder="Tu Mensaje" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-            <div class="social">
-                <a href="#">Instagram</a>
-                <a href="#">Behance</a>
-                <a href="#">LinkedIn</a>
-            </div>
-        </section>
-    </main>
+  <footer>
+    <p>© 2024 - Tu Nombre o Marca</p>
+  </footer>
 </body>
-<script src="script.js"></script>
 </html>
